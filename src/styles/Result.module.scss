@@ -1,0 +1,46 @@
+.result{
+    position: absolute;
+    transform: translate(0, 150%);
+    width: 100%;
+    animation-name: result;
+    animation-duration: 1s;
+    &__title{
+        color: white;
+        font-size: 36px;
+    }
+    &__score{
+        color: white;
+        font-size: 20px;
+    }
+    &__back{ 
+        color: white;
+        font-size: 26px;
+        text-decoration: none;
+        font-weight: bold;
+        border: 1px solid white;
+        border-radius: 1.3em;
+        padding: 15px 25px;
+        transition: 0.3s ease;
+        &:hover{
+            color: black;
+            background-color: white;
+            transition: 0.3s ease;
+        }
+    }
+    @keyframes result{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}

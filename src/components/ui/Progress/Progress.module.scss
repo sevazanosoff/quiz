@@ -1,0 +1,6 @@
+.progress__bar{
+    width: 400px;
+    height: 1.5em; // <---- что-бы PB адаптически выбирал высоту под размер текста
+    border-radius: 1.5em;
+}
+
